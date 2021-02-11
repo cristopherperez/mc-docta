@@ -1,0 +1,296 @@
+.container * {
+  box-sizing: border-box;
+}
+
+body, html {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #b62309, #ec7a10);
+}
+
+.container {
+  width: 360px;
+  height: 640px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background-color: #df2706;
+  border-radius: 50%;
+}
+
+.logo-container h1 {
+  color: #df2706;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.pedido-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hamburguesas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid rgb(221, 215, 215);
+  margin-top: 20px;
+}
+
+.title {
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+.hamburguesa-container {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+}
+
+.hamburguesa-container img {
+  width: 40px;
+  height: 40px;
+}
+
+.toppings-container {
+  width: 100%;
+  border-top: 1px solid #ddd7d7;
+  border-bottom: 1px solid #ddd7d7;
+  margin-top: 20px;
+}
+
+.toppings-container h2{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.toppings-container .columns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topping-select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aderezo-checkbox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.comprar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.boton-unidades {
+  display: flex;
+  margin: 10px;
+}
+
+.boton-unidades button {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding: 5px 7px;
+  font-size: 1rem;
+}
+
+.boton-unidades img {
+  width: 12px;
+  height: 12px;
+}
+
+.boton-unidades input{
+  text-align: end;
+  width: 40px;
+  padding: 0;
+  border: 1px solid grey;
+  border-right: transparent;
+  border-left: transparent;
+}
+
+.boton-unidades .dec {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: transparent;
+}
+
+.boton-unidades .inc {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: transparent;
+}
+
+.toppings-container .column-left, .toppings-container .column-right {
+  margin: 20px;
+  flex: 1;
+}
+
+.precio {
+  color: #a3a0a0;
+  font-size: 0.8rem;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.totalPedido {
+  border: 0;
+  height: 40px;
+  width: 100px;
+}
+
+.totalPedido[type="number"] {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.boton-siguiente {
+  width: 100px;
+  height: 35px;
+  margin: 0;
+  border: 0;
+  background-color: #df2706;
+  border-radius: 25px;
+  font-family: Montserrat;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.total-siguiente-container {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.pago-select {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.datos-cliente {
+  display: flex;
+  flex-direction: column;
+}
+
+.datos-cliente .title {
+  text-align: center;
+}
+
+.datos-cliente button, .datos-tarjeta button, .datos-transferencia button, .confirmar-compra button {
+  align-self: center;
+}
+
+.datos-cliente input, .datos-tarjeta input {
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #ddd7d7;
+  border-left: 0px;
+  padding: 5px 0px;
+  margin: 10px 0px;
+}
+
+.comprar-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.datos-tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
+}
+
+.datos-tarjeta .title {
+  text-align: center;
+}
+
+.datos-transferencia {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-cbu {
+  border-top: 1px solid #ddd7d7;
+  border-bottom: 1px solid #ddd7d7;
+  padding: 20px;
+}
+
+.confirmar-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pedido-final {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.pedido-container {
+  display: flex;
+}
+
+.datos-cliente {
+  display: none;
+}
+
+.pago-select {
+  display: none;
+}
+
+.datos-tarjeta {
+  display: none;
+}
+
+.datos-transferencia {
+  display: none;
+}
+
+.confirmar-compra {
+  display: none;
+}

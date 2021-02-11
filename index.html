@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="https://pngimage.net/wp-content/uploads/2018/06/png-mcdonalds-8.png">        
+          </div>       
+          <h1>McDocta's</h1>      
+        </div>
+        <div class="pedido-container">
+          <div class="hamburguesas">
+            <div class="dev-mac">
+              <h2 class="title">¡Probá nuestra Dev Mac!</h2>
+            </div>
+            <div class="hamburguesa-container">
+              <img src="https://image.flaticon.com/icons/svg/1826/1826237.svg" alt="">
+            <div>Dev Mac</div>
+            <div class="precio">$200</div>
+            </div>
+            <div>¿Cuántas vas a querer?</div>
+            <div class="boton-unidades">
+              <button class="dec"><img src="data:image/svg+xml;base64,
+                PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNERjI3MDYiIGQ9Ik01MDAuMzY0LDI2Ny42MzZIMTEuNjM2QzUuMjEsMjY3LjYzNiwwLDI2Mi40MjcsMCwyNTZjMC02LjQyNyw1LjIxLTExLjYzNiwxMS42MzYtMTEuNjM2aDQ4OC43MjcgICBjNi40MjcsMCwxMS42MzYsNS4yMSwxMS42MzYsMTEuNjM2QzUxMiwyNjIuNDI3LDUwNi43OSwyNjcuNjM2LDUwMC4zNjQsMjY3LjYzNnoiIGRhdGEtb3JpZ2luYWw9IiM0MjhERkYiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiM0MjhERkYiPjwvcGF0aD4KPC9nPjwvZz4gPC9zdmc+" /></button>
+              <input type="number" readonly data-hamburguesas min="1" data-afectatotal="true">
+              <button class="inc"><img src="data:image/svg+xml;base64,
+                PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48Zz48Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNERjI3MDYiIGQ9Ik0yNTYsNTEyYy0zLjA4NiwwLjAwMS02LjA0Ny0xLjIyNS04LjIyOS0zLjQwN2MtMi4xODItMi4xODItMy40MDgtNS4xNDMtMy40MDctOC4yMjlWMTEuNjM2ICAgQzI0NC4zNjQsNS4yMSwyNDkuNTczLDAsMjU2LDBzMTEuNjM2LDUuMjEsMTEuNjM2LDExLjYzNnY0ODguNzI3YzAuMDAxLDMuMDg2LTEuMjI1LDYuMDQ3LTMuNDA3LDguMjI5ICAgQzI2Mi4wNDcsNTEwLjc3NSwyNTkuMDg2LDUxMi4wMDEsMjU2LDUxMnoiIGRhdGEtb3JpZ2luYWw9IiNERjI3MDYiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiM0MjhERkYiPjwvcGF0aD4KCTxwYXRoIHN0eWxlPSJmaWxsOiNERjI3MDYiIGQ9Ik01MDAuMzY0LDI2Ny42MzZIMTEuNjM2QzUuMjEsMjY3LjYzNiwwLDI2Mi40MjcsMCwyNTZzNS4yMS0xMS42MzYsMTEuNjM2LTExLjYzNmg0ODguNzI3ICAgYzYuNDI3LDAsMTEuNjM2LDUuMjEsMTEuNjM2LDExLjYzNlM1MDYuNzksMjY3LjYzNiw1MDAuMzY0LDI2Ny42MzZ6IiBkYXRhLW9yaWdpbmFsPSIjREYyNzA2IiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjNDI4REZGIj48L3BhdGg+CjwvZz48L2c+PC9nPiA8L3N2Zz4=" /></i></button>
+            </div>  
+          </div>
+          <div class="toppings-container">
+            <h2>Agregá tus toppings:</h2>
+            <div class="columns-container">
+              <div class="column-left">            
+                <div class="topping-select">
+                  <div>Tomate:</div>              
+                  <select class="tomate" data-afectatotal="true">
+                    <option>0</option>
+                    <option>1</option>
+                  </select>                
+                </div>
+                <div class="precio">$15</div>
+                <div class="topping-select">
+                  <div>Huevo:</div>              
+                  <select class="huevo" data-afectatotal="true">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>                
+                </div>
+                <div class="precio">$40</div>
+                <div class="topping-select">
+                  <div>Queso:</div>              
+                  <select class="queso" data-afectatotal="true">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>                
+                </div>
+                <div class="precio">$20</div>
+              </div>
+              <div class="column-right">
+                <div class="aderezo">
+                  <div class="aderezo-checkbox">
+                    <div> Mayonesa:</div>              
+                    <input data-afectatotal="true" class="mayonesa" type="checkbox">
+                  </div>
+                  <div class="precio">$10</div> 
+                </div>
+                <div class="aderezo">
+                  <div class="aderezo-checkbox">
+                    <div> Mostaza:</div>              
+                    <input data-afectatotal="true" class="mostaza" type="checkbox">
+                  </div>
+                  <div class="precio">$10</div>    
+                </div>
+                <div class="aderezo">
+                  <div class="aderezo-checkbox">
+                    <div> Ketchup:</div>              
+                    <input data-afectatotal="true" class="ketchup" type="checkbox">
+                  </div>
+                  <div class="precio">$10</div>  
+                </div>
+              </div>          
+            </div>
+          </div>  
+          <div class="total-siguiente-container">
+            <div class="total-container">
+              <div>Total:</div>
+              <input class="totalPedido" type="number" value="200" readonly>
+            </div>
+            <button class="boton-siguiente">Siguiente</button>
+          </div>      
+        </div>
+        <div class="comprar-container">
+          <div class="datos-cliente">
+            <h2 class="title">Completá tus datos:</h2>
+            <label> Nombre y apellido: </label>
+            <input type="text" name="nombre" required>
+            <label> Dirección: </label>
+            <input type="text" name="direccion">
+            <label> E-mail: </label>
+            <input type="email" name="email" size="45">
+            <label> Teléfono celular</label>
+            <input type="tel" name="telefono">
+            <button class="boton-siguiente">Siguiente</button>
+          </div> 
+          <div class="pago-select">
+            <h2 class="title">¿Cómo querés pagar?</h2>
+            <label>Elegí tu forma de pago:</label>
+            <div><input id="pagaConTC" name="formaDePago" type="radio"><label for="pagaConTC">Tarjeta de crédito</label></div>
+            <div><input id="pagaConTD" name="formaDePago" type="radio"><label for="pagaConTD">Tarjeta de débito</label></div>
+            <div><input id="pagaConTB" name="formaDePago" type="radio"><label for="pagaConTB">Transferencia bancaria</label></div>
+            <button class="boton-siguiente">Siguiente</button>
+          </div>         
+          <div class="datos-tarjeta">         
+            <h2 class="title">Completá los datos de tu tarjeta:</h2>          
+            <label>Número de tarjeta</label>
+            <input type="text">
+            <label>Nombre del titular</label>
+            <input type="text">
+            <label>Fecha de Vencimiento</label>
+            <input type="date">
+            <label>Código de Seguridad</label>
+            <input type="text">
+            <button class="boton-siguiente boton-comprar">Siguiente</button>  
+          </div>          
+          <div class="datos-transferencia">
+            <h2 class="title">Transferí tu monto a esta cuenta:</h2>
+            <div class="info-cbu">
+              <p >CBU:
+                <br>
+                000015475254588669
+                <br>
+                Alias:
+                <br>
+                McDoctas
+                <br>
+                Titular:
+                <br>
+                McDocta's SA
+              </p>
+            </div>       
+            <p>Cuando hayas hecho la transferencia, mandá el comprobante por WhatsApp a este número +954323284373 y confirmaremos tu pedido :).</p>
+            <button class="boton-siguiente">¡Entendido!</button>        
+          </div>
+          <div class="confirmar-compra">
+            <h2 class="title">Confirmá tu compra:</h2>
+            <div class="pedido-final">
+              <div>Hamburguesas elegidas: </div>
+              <div>Toppings seleccionados:</div>
+              <div>Forma de pago elegida:</div>
+              <div>Total:</div>
+              <button class="boton-siguiente">¡Comprar!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
